@@ -2,7 +2,7 @@ const path = require('path');
 
 const isProd = false;
 const config = {
-  devtool: isProd ? false : 'source-map',
+  devtool: isProd ? false : 'eval-cheap-source-map',
   mode: 'development',
   entry: [
     './client/app.jsx'

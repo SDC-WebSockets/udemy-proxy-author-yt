@@ -127,4 +127,7 @@ dist/
 tmp/
 temp/
 
+# Bash Scripts
+*.sh
+
 # End of https://www.toptal.com/developers/gitignore/api/node
