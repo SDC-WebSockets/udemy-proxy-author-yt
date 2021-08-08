@@ -5,7 +5,7 @@ export let options = {
     scenarios: {
       constant_request_rate: {
         executor: "constant-arrival-rate",
-        rate: 10000,
+        rate: 100,
         timeUnit: "1s",
         duration: "120s",
         preAllocatedVUs: 100,
@@ -15,7 +15,7 @@ export let options = {
   };
 
 export default function () {
-    const testUrl = 'http://localhost:5000/?courseId=9123456';
+    const testUrl = 'http://18.118.9.156:5000/?courseId=9123456';
     const response = http.get(testUrl);
     check(response, {
         'response status 200': (r) => r.status === 200,
